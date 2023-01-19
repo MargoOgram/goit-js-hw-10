@@ -21,6 +21,8 @@ searchRef.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 
 
 
+
+
 function onInput(e) {
   let inputCountry = e.target.value.trim();
 
