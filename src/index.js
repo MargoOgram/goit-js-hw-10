@@ -16,13 +16,6 @@ const countryInfoRef = document.querySelector('.country-info');
 
 searchRef.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 
-
-
-
-
-
-
-
 function onInput(e) {
   let inputCountry = e.target.value.trim();
 
@@ -82,9 +75,8 @@ function markupCountry(data) {
   const markup = data
     .map(el => {
       return `<h1>
-       <img src="${el.flags.svg}" alt="${
-        el.name.official
-      }" width="40" height="20" /> 
+       <img src="${el.flags.svg}" alt="${el.name.official
+        }" width="40" height="20" /> 
             
         ${el.name.official}
       </h1>
